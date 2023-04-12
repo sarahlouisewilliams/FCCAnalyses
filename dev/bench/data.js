@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1681341053513,
+  "lastUpdate": 1681341055192,
   "repoUrl": "https://github.com/sarahlouisewilliams/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -66,6 +66,60 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a18ecb3b1ef185bb91a15c82343e3aa009dc85e",
+          "message": "Merge pull request #268 from selvaggi/master\n\nImprovements and bug fixes in dNdx, time and energy smearing",
+          "timestamp": "2023-04-04T10:30:49+02:00",
+          "tree_id": "391ca3faa16243ad60e746e7a88a2c6dc9f92912",
+          "url": "https://github.com/sarahlouisewilliams/FCCAnalyses/commit/1a18ecb3b1ef185bb91a15c82343e3aa009dc85e"
+        },
+        "date": 1681341054761,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/weaver/analysis_inference.py",
+            "value": 2.829749421518756,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 9.316244128764973,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 8.353866108704443,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 6.309325492486212,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 8.058320489914985,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.1381870150574924,
+            "unit": "Evt/s"
           }
         ]
       }

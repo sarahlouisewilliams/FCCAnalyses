@@ -734,7 +734,9 @@ def runFinal(rdfModule):
         procDict = json.loads(req.decode('utf-8'))
 
     else:
-        procFile = os.path.join(os.getenv('FCCDICTSDIR', deffccdicts), '') + procFile
+        print('procFile= '+procFile)
+        if not 'williams' in procFile:
+            procFile = os.path.join(os.getenv('FCCDICTSDIR', deffccdicts), '') + procFile
         if not os.path.isfile(procFile):
             print ('----> No procDict found: ==={}===, exit'.format(procFile))
             sys.exit(3)
@@ -1086,6 +1088,7 @@ def run(mainparser, subparser=None):
     rdfSpec.loader.exec_module(rdfModule)
 
     try:
+        print("printing argument")
         print(args.command)
         args.command
         if args.command == "run":      runStages(args, rdfModule, args.preprocess, analysisFile)
@@ -1098,25 +1101,25 @@ def run(mainparser, subparser=None):
 
     #below is legacy using the old way of runnig with options in "python config/FCCAnalysisRun.py analysis.py --options
     #check if this is final analysis
-    if args.final:
-        if args.plots:
+    if args.command == "final":
+        if args.command == "plots":
             print ('----> Can not have --plots with --final, exit')
             sys.exit(3)
-        if args.preprocess:
+        if args.command == "preprocess":
             print ('----> Can not have --preprocess with --final, exit')
             sys.exit(3)
         runFinal(rdfModule)
 
-    elif args.plots:
-        if args.final:
+    elif args.command == "plots":
+        if args.command == "final":
             print ('----> Can not have --final with --plots, exit')
             sys.exit(3)
-        if args.preprocess:
+        if args.command == "preprocess":
             print ('----> Can not have --preprocess with --plots, exit')
             sys.exit(3)
         runPlots(analysisFile)
 
-    elif args.validate:
+    elif args.command == "validate":
         runValidate(args.jobdir)
 
     else:

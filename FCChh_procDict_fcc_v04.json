@@ -1,0 +1,6 @@
+{
+   "pwp8_pp_hh_lambda100_5f_hhbbaa": {"numberOfEvents": 4980000, "sumOfWeights": 4980000, "crossSection": 0.0026219999999999998, "kfactor": 1.0, "matchingEfficiency": 1.0},
+ "mgp8_pp_bbtata_QED": {"numberOfEvents": 4910000, "sumOfWeights": 4910000, "crossSection": 0.5519, "kfactor": 1.0, "matchingEfficiency": 1.0},
+ "mgp8_pp_bbtata_QCDQED": {"numberOfEvents": 4950000, "sumOfWeights": 4950000, "crossSection": 75.61, "kfactor": 1.0, "matchingEfficiency": 1.0},
+ "mgp8_pp_tt012j_5f": {"numberOfEvents": 79190000, "sumOfWeights": 79190000, "crossSection": 43110.0, "kfactor": 1.74, "matchingEfficiency": 1.0}
+}

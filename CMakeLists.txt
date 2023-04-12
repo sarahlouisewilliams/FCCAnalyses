@@ -14,7 +14,7 @@ include(CTest)
 #--- options ------------------------------------------------------------------
 
 
-set(WITH_ACTS AUTO CACHE STRING "Build analyzers that need Acts")
+set(WITH_ACTS OFF CACHE STRING "Build analyzers that need Acts")
 set_property(CACHE WITH_ACTS PROPERTY STRINGS AUTO ON OFF)
 
 set(WITH_DD4HEP AUTO CACHE STRING "Build analyzers that need DD4hep")
@@ -61,6 +61,8 @@ find_package(podio)
 # need to use our own FindFastJet.cmake
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 find_package(FastJet)
+
+find_package( Delphes REQUIRED )
 
 
 if(WITH_ACTS)

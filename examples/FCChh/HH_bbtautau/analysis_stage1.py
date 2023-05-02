@@ -1,11 +1,11 @@
 #Mandatory: List of processes
 
 
-processList = {'pwp8_pp_hh_lambda100_5f_hhbbaa':{'chunks':100,'fraction':0.001},
-              'mgp8_pp_bbtata_QED':{'chunks':10,'fraction':0.01},
-              'mgp8_pp_bbtata_QCDQED':{'chunks':10,'fraction':0.01},
+processList = {'pwp8_pp_hh_lambda100_5f_hhbbaa':{'chunks':10,'fraction':0.1},
+              'mgp8_pp_bbtata_QED':{'chunks':10,'fraction':0.1},
+              'mgp8_pp_bbtata_QCDQED':{'chunks':10,'fraction':0.1},
               #'mg_pp_bbjj_QCD_5f',
-              'mgp8_pp_tt012j_5f':{'chunks':100,'fraction':0.001},
+              'mgp8_pp_tt012j_5f':{'chunks':100,'fraction':0.1},
               #'mg_pp_h012j_5f',
               #'mg_pp_vh012j_5f',
               #'mg_pp_ttw_5f',

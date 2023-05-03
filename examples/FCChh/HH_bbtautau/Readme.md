@@ -1,7 +1,7 @@
 
 This directory now contains a first update of files that can be used to run a skeleton fcc-hh workflow using the FCCAnalysis package.
 
-It follows the workflow laid out in the central FCC software tutorial: https://hep-fcc.github.io/fcc-tutorials/fast-sim-and-analysis/fccanalyses/doc/starterkit/FccFastSimAnalysis/Readme.html#part-ii-analyse-with-fccanalyses
+It follows the workflow laid out in the central FCC software tutorial: https://hep-fcc.github.io/fcc-tutorials/master/index.html
 
 To run the workflow, execute:
 
